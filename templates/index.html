@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <input class="logout-button" type="button" value="Logout" onclick="location.href='logout';">
+    <ul class="contact-list">
+    {% for contact in contacts %}
+        {% if is_mobile %}
+        <li class="yo-contact">
+        {% else %}
+        <li class="yo-contact {{ colors[loop.index % 8] }}">
+        {% endif %}
+            <span class="contact-name" data-username="{{ contact.username }}">
+                {{ contact.display_name }}
+            </span>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

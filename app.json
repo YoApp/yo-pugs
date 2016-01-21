@@ -1,0 +1,25 @@
+{
+  "name": "Yo Pugs",
+  "description": "Send pug gifs to your Yo friends",
+  "repository": "https://github.com/YoApp/yo-pugs",
+  "logo": "http://applocus.net/uploads/images/00/00/01/2015/01/19/28b579.jpg",
+  "keywords": ["yo app", "python", "yo", "pugs"],
+  "env": {
+    "CLIENT_ID": {
+      "description": "Your Yo API client id"
+    },
+    "CLIENT_SECRET": {
+      "description": "Your Yo API client secret"
+    },
+    "REDIRECT_URI": {
+      "description": "Your Yo API client redirect uri"
+    },
+    "GIPHY_KEYWORD": {
+      "description": "Keyword to search for giphy"
+    },
+    "SECRET_KEY": {
+       "description": "Secret key",
+       "generator": "secret"
+    }
+  }
+}
